@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enkripsi dan Dekripsi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Enkripsi dan Dekripsi</h1>
+    <form>
+        <label for="pesan">Masukkan Pesan:</label>
+        <input type="text" id="pesan">
+        <br>
+        <label for="kunci">Masukkan Kunci:</label>
+        <input type="text" id="kunci">
+        <br>
+        <button type="button" onclick="enkripsi()">Enkripsi</button>
+        <button type="button" onclick="dekripsi()">Dekripsi</button>
+        <button type="button" onclick="hapus()">Hapus</button>
+    </form>
+    <div id="hasil-container">
+        <h2 style="text-align: center;">Hasil</h2>
+        <div id="hasil"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="rc4.js"></script>
+</body>
+</html>
